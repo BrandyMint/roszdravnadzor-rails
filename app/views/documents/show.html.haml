@@ -1,0 +1,3 @@
+-if @document.present?
+  %h2= @document['name']
+  = @document['body'].html_safe

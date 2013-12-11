@@ -4,6 +4,9 @@ Roszdravnadzor::Application.routes.draw do
 
   root 'welcome#index'
 
+  resources :news
+  resources :documents
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

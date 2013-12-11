@@ -99,7 +99,7 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'airbrake', :github => 'airbrake/airbrake'
 
 gem 'bootstrap-sass', '~> 3.0.2.0'
-gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'compass'
 
 #assets
 # Use edge version of sprockets-rails
@@ -221,15 +221,15 @@ group :test do
   gem 'guard-bundler'
   gem 'guard-cucumber'
   gem 'guard-ctags-bundler'
-  
+
   gem 'simplecov', :require => false
   gem 'simplecov-rcov', :require => false
-  
+
   gem "database_cleaner"
   gem "capybara"
   gem 'capybara-screenshot'
   gem 'poltergeist'
-  
+
   gem "launchy", ">= 2.1.2"
   gem 'turn', :require => false
   #gem "test_active_admin", :git => "git://github.com/BrandyMint/test_active_admin.git"
@@ -239,7 +239,7 @@ group :deploy do
   gem 'capistrano', '~> 3.0', :require => false
   gem 'capistrano-rbenv', github: 'capistrano/rbenv', :require => false
   gem 'capistrano-rails', github: 'capistrano/rails', :require => false
-  gem 'capistrano-bundler', github: 'capistrano/bundler', :require => false
+  gem 'capistrano-bundler', '~> 1.0.0', github: 'capistrano/bundler', :require => false
 end
 
 group :production do

@@ -25,4 +25,8 @@ module ApplicationHelper
     content_tag :span, count, options
   end
 
+  def json_file_to_hash file
+    ActiveSupport::JSON.decode File.open("#{Rails.root}/public/#{file}")
+  end
+
 end
