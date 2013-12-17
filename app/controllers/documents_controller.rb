@@ -14,8 +14,4 @@ class DocumentsController < ApplicationController
     end
   end
 
-  def select_from_hash hash, id
-    hash.select{ |d| d['id'].to_i == id }
-  end
-
 end

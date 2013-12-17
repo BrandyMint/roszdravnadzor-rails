@@ -29,4 +29,8 @@ module ApplicationHelper
     ActiveSupport::JSON.decode File.open("#{Rails.root}/public/#{file}")
   end
 
+  def select_from_hash hash, id
+    hash.select{ |d| d['id'].to_i == id }
+  end
+
 end
