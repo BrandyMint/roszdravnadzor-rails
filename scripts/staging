@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ssh USERNAME@HOSTNAME -p PORTNUM
+exec ssh wwwzdrav@icfdev.ru -p 233

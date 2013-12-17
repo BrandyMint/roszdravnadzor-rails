@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Use unicorn as the app server
 gem 'unicorn'
 
-gem 'rails', '4.0.0'
+gem 'rails', '~> 4.0.0'
 #gem 'rails',     github: 'rails/rails'
 #gem 'arel',      github: 'rails/arel'
 # gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
@@ -237,9 +237,9 @@ end
 
 group :deploy do
   gem 'capistrano', '~> 3.0', :require => false
-  gem 'capistrano-rbenv', github: 'capistrano/rbenv', :require => false
-  gem 'capistrano-rails', github: 'capistrano/rails', :require => false
-  gem 'capistrano-bundler', '~> 1.0.0', github: 'capistrano/bundler', :require => false
+  gem 'capistrano-rbenv', '~> 2.0', :require => false
+  gem 'capistrano-rails', '~> 1.1.0', :require => false
+  gem 'capistrano-bundler', :require => false
 end
 
 group :production do
