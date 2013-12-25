@@ -9,5 +9,33 @@
 // @import base
 @import footer
 
+html,
+body
+  height: 100%
+
 body
   padding-top: 60px
+
+#wrapper
+  position: relative
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -81px
+
+.content
+  margin: 0 0 100px
+
+.sidebar
+  .nav
+    text-shadow: 0 1px 0 #fff
+    background-color: #f7f5fa
+    a
+      color: #716b7a
+      &:hover
+        background-color: #e5e3e9
+        border-right: 1px solid #dbd8e0
+  .selected a
+    font-weight: bold
+    color: #563d7c
+    background-color: transparent

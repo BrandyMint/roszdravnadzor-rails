@@ -25,8 +25,8 @@ module ApplicationHelper
     content_tag :span, count, options
   end
 
-  def json_file_to_hash file
-    ActiveSupport::JSON.decode File.open("#{Rails.root}/public/#{file}")
+  def file_to_hash file
+    YAML.load_file("#{Rails.root}/public/#{file}.yaml")
   end
 
   def select_from_hash hash, id

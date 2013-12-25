@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_filter :build_navigation
 
   def build_navigation
-    @menu = json_file_to_hash 'menu.json'
-    @sidebar_menu = {}
+    @menu = file_to_hash 'menu'
+    @sidebar_menu = file_to_hash 'sidebar'
   end
 end
